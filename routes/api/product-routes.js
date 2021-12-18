@@ -7,12 +7,43 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
+  Product.findAll({
+    include:[
+        { model:Category,  
+          required:false // reguired false turns this into a LeftJoin instead of a Join
+        },
+        { model:Tag,  
+          required:false // reguired false turns this into a LeftJoin instead of a Join
+        },
+        ]
+     })
+    .then(dbProductData => (dbProductData) ? res.json(dbProductData) : res.status(400).json({ message: 'No products exist' }))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 // get one product
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
+  Product.findAll({
+    where: {id:req.params.id},
+    include:[
+        { model:Category,  
+          required:false // reguired false turns this into a LeftJoin instead of a Join
+        },
+        { model:Tag,  
+          required:false // reguired false turns this into a LeftJoin instead of a Join
+        },
+        ]
+     })
+    .then(dbProductData => (dbProductData) ? res.json(dbProductData) : res.status(400).json({ message: `No products exist w/h id: ${req.params.id}` }))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 // create new product
