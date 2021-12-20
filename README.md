@@ -29,7 +29,7 @@
  * dotenv package 
   
  
- <ul><li><a href="https://github.com/mogannam/insomnia-commerce.git">Code on GitHub</a> </li>
+ <ul><li><a href="https://github.com/mogannam/insomnia-commerce.git">Code on GitHub : https://github.com/mogannam/insomnia-commerce.git</a> </li>
   <li>Clone the project here: git@github.com:mogannam/insomnia-commerce.git </li>
   </ul> 
 
