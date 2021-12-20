@@ -33,7 +33,7 @@
   <li>Clone the project here: git@github.com:mogannam/insomnia-commerce.git </li>
   </ul> 
 
- [Video Demo of Project](https://github.com/mogannam/sql-crm/blob/main/sql-crm-video.mp4) 
+ [Video Demo of Project](https://github.com/mogannam/insomnia-commerce/raw/main/commerce%20video.mp4) 
 
  # License 
  insomnia-commerce is [MIT](https://opensource.org/licenses/MIT) Licensed. 
