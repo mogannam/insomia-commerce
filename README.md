@@ -3,7 +3,7 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md) 
 # Description 
 
- A project demoing an e-commerce backend using inomnia, Sequelize, node.js 
+ A project demoing an e-commerce backend using insomnia, sequelize, node.js 
 
  <hr>
 
